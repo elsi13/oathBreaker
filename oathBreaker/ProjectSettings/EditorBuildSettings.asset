@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Top_scene.unity
     guid: 4e8b71ab7807a214598a51da44adbb87
+  - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: bb87eca558baeb54a8ff6f87f3a364a0
   m_configObjects: {}

@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -21,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-        rb.AddForce(movement * speed);
+        transform.Translate(movement * Time.deltaTime * speed);
     }
 
 
@@ -29,7 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Person"))
         {
-            other.gameObject.SetActive(false);
+            SceneManager.LoadScene("Story");
         }
     }
 }
