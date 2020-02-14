@@ -3,12 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class StorySwitcher : MonoBehaviour
 {
-    public Sprite Lu; // I attched these from editor
-    public Sprite Hell;
+
 
 
     public int snc;
-    public void changeStory() // make sure to attach this to event trigger
+    public void ChangeStory() // make sure to attach this to event trigger
     {
 
         switch (snc)
@@ -19,7 +18,7 @@ public class StorySwitcher : MonoBehaviour
                 snc++; //increase count so it gets higher and switches to different sprite
                 break;
             case 1:
-                SceneManager.LoadScene("3");
+                SceneManager.LoadScene("1");
                 snc++;
                 break;
 
