@@ -60,4 +60,4 @@ crashlytics-build.properties
 
 # Everything in temp file
 oathBreaker/Temp/*
-
+*.log
