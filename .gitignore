@@ -61,3 +61,4 @@ crashlytics-build.properties
 # Everything in temp file
 oathBreaker/Temp/*
 
+oathBreaker/Library/shadercompiler-UnityShaderCompiler.exe0.log
