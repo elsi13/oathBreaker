@@ -8,9 +8,9 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene("Top_scene");
     }
 
-    public void GotoMenuScene()
+    public void GotoFirstScene()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("1");
     }
 
 }
