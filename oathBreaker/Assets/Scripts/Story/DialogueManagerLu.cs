@@ -29,7 +29,7 @@ public class DialogueManagerLu: MonoBehaviour
         dialogue_animator.SetBool("IsOpen", true);
         next_animator.SetBool("Next", false);
         panel_animator.SetInteger("image", 0);
-        image_animator.SetInteger("mood", 0);
+        image_animator.SetInteger("lu_mood", 0);
         nameText.text = dialogue.name;
         
 
@@ -56,7 +56,7 @@ public class DialogueManagerLu: MonoBehaviour
 
         if (sentences.Count == 5)
         {
-            image_animator.SetInteger("mood", 1);
+            image_animator.SetInteger("lu_mood", 3);
            
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
@@ -65,7 +65,7 @@ public class DialogueManagerLu: MonoBehaviour
 
         if (sentences.Count == 1)
         {
-            image_animator.SetInteger("mood", 2);
+            image_animator.SetInteger("lu_mood", 2);
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));

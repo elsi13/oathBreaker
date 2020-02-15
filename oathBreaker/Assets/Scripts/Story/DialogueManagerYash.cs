@@ -29,7 +29,7 @@ public class DialogueManagerYash: MonoBehaviour
         dialogue_animator.SetBool("IsOpen", true);
         next_animator.SetBool("Next", false);
         panel_animator.SetInteger("image", 0);
-        image_animator.SetInteger("mood", 0);
+        image_animator.SetInteger("yash_mood", 0);
         nameText.text = dialogue.name;
         
 
@@ -55,7 +55,10 @@ public class DialogueManagerYash: MonoBehaviour
 
         if (sentences.Count == 4)
         {
-            image_animator.SetInteger("mood", 1);
+            image_animator.SetInteger("yash_mood", 1);
+
+            Debug.Log(Global.Yash_story);
+            Global.Yash_story = 1;
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
@@ -64,7 +67,8 @@ public class DialogueManagerYash: MonoBehaviour
 
         if (sentences.Count == 2)
         {
-            image_animator.SetInteger("mood", 2);
+            Debug.Log(Global.Yash_story);
+            image_animator.SetInteger("yash_mood", 2);
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
@@ -73,7 +77,7 @@ public class DialogueManagerYash: MonoBehaviour
 
         if (sentences.Count == 1)
         {
-            image_animator.SetInteger("mood", 0);
+            image_animator.SetInteger("yash_mood", 0);
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
