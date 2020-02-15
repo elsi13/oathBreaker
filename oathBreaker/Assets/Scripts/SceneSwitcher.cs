@@ -12,5 +12,9 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
-
+	
+	public void GotoHellScene()
+	{
+		SceneManager.LoadScene("Hell");
+	}
 }
