@@ -30,5 +30,10 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene("Story");
         }
+
+        if (other.gameObject.CompareTag("Hell"))
+        {
+            SceneManager.LoadScene("Hell");
+        }
     }
 }
