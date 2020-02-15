@@ -44,6 +44,12 @@ public class DialogueManagerLu: MonoBehaviour
     }
     public void DisplayNextSentence()
     {
+        if (sentences.Count == 0)
+        {
+            EndDialogue();
+            next_animator.SetBool("Next", true);
+            return;
+        }
 
         string sentence = sentences.Dequeue();
 
@@ -59,7 +65,7 @@ public class DialogueManagerLu: MonoBehaviour
 
         if (sentences.Count == 1)
         {
-            image_animator.SetInteger("mood", 1);
+            image_animator.SetInteger("mood", 2);
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
