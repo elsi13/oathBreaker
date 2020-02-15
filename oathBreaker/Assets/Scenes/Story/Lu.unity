@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 100315130}
   - component: {fileID: 100315132}
   - component: {fileID: 100315133}
+  - component: {fileID: 100315134}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -225,7 +226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 127, y: 79}
+  m_AnchoredPosition: {x: -36.3, y: 79}
   m_SizeDelta: {x: 159, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &100315130
@@ -297,16 +298,48 @@ MonoBehaviour:
   dialogue:
     name: Lu
     sentences:
-    - Ciao
-    - '.....'
-    - ..
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Ciao!!
+    - "\u2026\u2026"
+    - "You\u2019re new here aren\u2019t you? What was your name again?"
+    - ">My name is\u2026"
+    - "Aaacccheeeww!! Sorry I had to sneeze, anyway, let\u2019s not get too stuck
+      on details. As you may have noticed, we are in a church. Well, some sort of
+      church. Are you smart?"
+    - ">Well, one might say I possess a level of\u2026."
+    - "Cool cool, so what are we doing in this church? That\u2019s the real question,
+      isn\u2019t it?"
+    - ">\u2026"
+    - "Not so smart, then\u2026"
+    - (what the?)
+--- !u!114 &100315134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100315128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 100315133}
+          m_MethodName: TriggerDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &112324194
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +419,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1924617978}
+      - m_Target: {fileID: 1924617980}
         m_MethodName: DisplayNextSentence
         m_Mode: 1
         m_Arguments:
@@ -1312,7 +1345,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1924617979}
-  - component: {fileID: 1924617978}
   - component: {fileID: 1924617980}
   m_Layer: 0
   m_Name: DialogueManager
@@ -1321,23 +1353,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1924617978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924617977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c14a780e27f8f784e84dcbe1af894b93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 89613469}
-  dialogueText: {fileID: 1401014208}
-  dialogue_animator: {fileID: 1441927168}
-  next_animator: {fileID: 1864948016}
-  panel_animator: {fileID: 642135105}
 --- !u!4 &1924617979
 Transform:
   m_ObjectHideFlags: 0
@@ -1369,3 +1384,4 @@ MonoBehaviour:
   dialogue_animator: {fileID: 1441927168}
   next_animator: {fileID: 1864948016}
   panel_animator: {fileID: 642135105}
+  image_animator: {fileID: 100315132}
