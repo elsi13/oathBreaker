@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Story/1.unity
+- path: Assets/Scenes/Story/Daniele.unity
   isLoaded: 1
   isActive: 1
