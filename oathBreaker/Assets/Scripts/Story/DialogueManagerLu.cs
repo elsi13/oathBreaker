@@ -54,7 +54,7 @@ public class DialogueManagerLu: MonoBehaviour
         string sentence = sentences.Dequeue();
 
 
-        if (sentences.Count == 7)
+        if (sentences.Count == 5)
         {
             image_animator.SetInteger("mood", 1);
            
