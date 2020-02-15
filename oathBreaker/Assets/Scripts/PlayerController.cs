@@ -46,7 +46,17 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Person"))
+        if (other.gameObject.CompareTag("Lu"))
+        {
+            SceneManager.LoadScene("Lu");
+        }
+
+        if (other.gameObject.CompareTag("Yash"))
+        {
+            SceneManager.LoadScene("1");
+        }
+
+        if (other.gameObject.CompareTag("Danielle"))
         {
             SceneManager.LoadScene("1");
         }
