@@ -271,7 +271,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -283,9 +283,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Generic trigger
-
-'
+  m_Text: Begin Story
 --- !u!222 &410979081
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -440,27 +438,31 @@ MonoBehaviour:
       Your office is here!
     - "You walk down the staircase, eager to meet your colleagues. There\u2019s a
       strange electricity in the air, but you pay it no heed."
-    - The name sounds familiar; you check your emails on your phone, and guess what?!
-      Your office is here!
     - "When you reach level 2, you can\u2019t find the office \u2013 but then a laughter,
       like a donkey\u2019s scream, splits the air. "
     - 'Inquisitive, you turn right, walk through a set of doors and reach an office. '
+    - Before you enter through the door, you pause. You come to realise that these
+      are the people you will be working with for the 3 or 4 years. First impressions
+      count! Chin high, you walk in.
     - You go in; this is not what you expected, but what a positive surprise!
-    - 'A merry lot awaits you on the other side; they are loudly discussing going
-      for a drink. You all head to a pub named Coopers. '
-    - '..... '
+    - A merry lot awaits you on the other side; they are loudly discussing going for
+      a drink. You all head to a pub named Coopers for few beers. Then someone suggests
+      you drink some shots.
+    - Then cigarettes.
+    - Then... coffee.
     - '......'
-    - '......'
-    - What happened?
-    - You wake up feeling like a fish on the beach.
-    - 'You go in; this is not what you expected, but what a positive surprise! It
-      is a merry lot of '
-    - 'You go in; this is not what you expected, but what a positive surprise! It
-      is a merry lot of '
-    - 'You go in; this is not what you expected, but what a positive surprise! It
-      is a merry lot of '
-    - 'You go in; this is not what you expected, but what a positive surprise! It
-      is a merry lot of '
+    - '.....'
+    - '.....'
+    - 'You wake up feeling like a fish on the beach; not quite dead but wishing you
+      were. '
+    - Your mouth feeling like sandpaper, your head pounding like the drumming of an
+      Australian aboriginal, your pant lightly shat, you check your side. Good. Your
+      kidneys are still intact.
+    - 'Slowly, you open your eyes. It takes a while for the image to come in focus;
+      when it does, you see a tall ceiling, cold colours and flames. Where are you?
+      In church? '
+    - "But it\u2019s a goat, rather than Jesus, staring down at you from above the
+      altar\u2026. a pentagram replaces Mary\u2026 and the cross is upside down."
 --- !u!114 &645262524
 MonoBehaviour:
   m_ObjectHideFlags: 0

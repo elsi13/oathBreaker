@@ -58,7 +58,7 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(TypeSentence(sentence));
             return;
         }
-        if (sentences.Count == 9)
+        if (sentences.Count == 7)
         {      
             panel_animator.SetInteger("image", 2);
             StopAllCoroutines();
@@ -66,7 +66,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (sentences.Count == 6)
+        if (sentences.Count == 4)
         {
             panel_animator.SetInteger("image", 3);
             StopAllCoroutines();
