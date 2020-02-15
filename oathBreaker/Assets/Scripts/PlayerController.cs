@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.CompareTag("Hell"))
         {
-            SceneManager.LoadScene("Hell");
+            SceneManager.LoadScene("TouchThePotato");
         }
 
         if (other.gameObject.CompareTag("Ground0"))
