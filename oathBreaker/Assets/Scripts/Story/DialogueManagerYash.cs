@@ -8,6 +8,7 @@ public class DialogueManagerYash: MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    private int start, end;
 
 
     public Animator dialogue_animator;
@@ -35,11 +36,41 @@ public class DialogueManagerYash: MonoBehaviour
 
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        switch (Global.Yash_story)
         {
-            sentences.Enqueue(sentence);
+            case 0:
+
+                start = 0;
+                end = 10;
+                Global.Yash_story = Global.Yash_story + 1;
+
+                break;
+            case 1:
+                // do something
+                if (Global.Lu_story == 0)
+                {
+                    start = 9;
+                    end = 10;
+                }
+                if (Global.Daniele_story == 0)
+                {
+                    start = 9;
+                    end = 10;
+                }
+                
+
+
+                break;
+            case 2:
+                break;
+            default:
+                break;
         }
-        DisplayNextSentence();
+        for (int i = start; i < end; i++)
+        {
+            sentences.Enqueue(dialogue.sentences.GetValue(i).ToString());
+        }
+
 
     }
     public void DisplayNextSentence()
@@ -57,8 +88,8 @@ public class DialogueManagerYash: MonoBehaviour
         {
             image_animator.SetInteger("yash_mood", 1);
 
-            Debug.Log(Global.Yash_story);
-            Global.Yash_story = 1;
+
+
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
@@ -67,7 +98,7 @@ public class DialogueManagerYash: MonoBehaviour
 
         if (sentences.Count == 2)
         {
-            Debug.Log(Global.Yash_story);
+
             image_animator.SetInteger("yash_mood", 2);
 
             StopAllCoroutines();

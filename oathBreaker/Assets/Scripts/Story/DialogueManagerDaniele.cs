@@ -45,12 +45,11 @@ public class DialogueManagerDaniele: MonoBehaviour
         }*/
         switch (Global.Daniele_story){
             case 0:
-                if (Global.Lu_story==0)
-                {
-                    start = 0;
-                    end = 9;
-                    Global.Daniele_story = Global.Daniele_story + 1;
-                }
+
+                start = 0;
+                end = 9;
+                Global.Daniele_story = Global.Daniele_story + 1;
+
                 break;
             case 1:
                 // do something
@@ -59,6 +58,13 @@ public class DialogueManagerDaniele: MonoBehaviour
                     start = 8;
                     end = 9;
                 }
+                if (Global.Yash_story == 0)
+                {
+                    start = 8;
+                    end = 9;
+                }
+
+
                 break;
             case 2:
                 break;
@@ -92,9 +98,6 @@ public class DialogueManagerDaniele: MonoBehaviour
         {
             image_animator.SetInteger("dan_mood", 1);
 
-            Debug.Log(Global.Yash_story);
-            Global.Yash_story = 1;
-            Debug.Log(Global.Yash_story);
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));

@@ -8,6 +8,8 @@ public class DialogueManagerLu: MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    private int start, end;
+
 
 
     public Animator dialogue_animator;
@@ -35,10 +37,51 @@ public class DialogueManagerLu: MonoBehaviour
 
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+
+
+        switch (Global.Lu_story)
         {
-            sentences.Enqueue(sentence);
+            case 0:
+
+                start = 0;
+                end = 10;
+                Global.Lu_story = Global.Lu_story + 1;
+
+                break;
+            case 1:
+                // do something
+
+
+                if (Global.Daniele_story == 0)
+                {
+                    start = 9;
+                    end = 10;
+                }
+                if (Global.Yash_story == 0)
+                {
+                    start = 9;
+                    end = 10;
+                }
+                else
+                {
+                    start = 11;
+                    end = 20;
+                    Global.Lu_story = Global.Lu_story + 1;
+
+                }
+
+
+                break;
+            case 2:
+                break;
+            default:
+                break;
         }
+        for (int i = start; i < end; i++)
+        {
+            sentences.Enqueue(dialogue.sentences.GetValue(i).ToString());
+        }
+
         DisplayNextSentence();
 
     }
