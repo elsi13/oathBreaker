@@ -62,6 +62,7 @@ public class DialogueManagerDaniele: MonoBehaviour
 
             Debug.Log(Global.Yash_story);
             Global.Yash_story = 1;
+            Debug.Log(Global.Yash_story);
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
