@@ -9,7 +9,10 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
 
-    public Animator animator;
+
+    public Animator dialogue_animator;
+    public Animator next_animator;
+    public Animator panel_animator;
 
     private Queue<string> sentences;
     // Start is called before the first frame update
@@ -22,7 +25,9 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue (Dialogue dialogue)
     {
 
-        animator.SetBool("IsOpen", true);
+        dialogue_animator.SetBool("IsOpen", true);
+        next_animator.SetBool("Next", false);
+        panel_animator.SetInteger("image", 0);
         nameText.text = dialogue.name;
         
 
@@ -40,11 +45,41 @@ public class DialogueManager : MonoBehaviour
         if (sentences.Count == 0)
         {
             EndDialogue();
+            next_animator.SetBool("Next", true);
             return;
         }
         string sentence = sentences.Dequeue();
+
+
+        if (sentences.Count == 10)
+        {            
+            panel_animator.SetInteger("image", 1);
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(sentence));
+            return;
+        }
+        if (sentences.Count == 9)
+        {      
+            panel_animator.SetInteger("image", 2);
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(sentence));
+            return;
+        }
+
+        if (sentences.Count == 6)
+        {
+            panel_animator.SetInteger("image", 3);
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(sentence));
+            return;
+        }
+
+
+
+
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+            
 
 
     } 
@@ -59,7 +94,8 @@ public class DialogueManager : MonoBehaviour
     }
     void EndDialogue()
         {
-        animator.SetBool("IsOpen", false);
+        dialogue_animator.SetBool("IsOpen", false);
+        
 
         }
 }
