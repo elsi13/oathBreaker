@@ -13,6 +13,7 @@ public class DialogueManagerLu: MonoBehaviour
     public Animator dialogue_animator;
     public Animator next_animator;
     public Animator panel_animator;
+    public Animator image_animator;
 
     private Queue<string> sentences;
     // Start is called before the first frame update
@@ -28,6 +29,7 @@ public class DialogueManagerLu: MonoBehaviour
         dialogue_animator.SetBool("IsOpen", true);
         next_animator.SetBool("Next", false);
         panel_animator.SetInteger("image", 0);
+        image_animator.SetInteger("mood", 0);
         nameText.text = dialogue.name;
         
 
@@ -42,37 +44,28 @@ public class DialogueManagerLu: MonoBehaviour
     }
     public void DisplayNextSentence()
     {
-        if (sentences.Count == 0)
-        {
-            EndDialogue();
-            next_animator.SetBool("Next", true);
-            return;
-        }
+
         string sentence = sentences.Dequeue();
 
 
-        if (sentences.Count == 10)
-        {            
-            panel_animator.SetInteger("image", 1);
-            StopAllCoroutines();
-            StartCoroutine(TypeSentence(sentence));
-            return;
-        }
         if (sentences.Count == 7)
-        {      
-            panel_animator.SetInteger("image", 2);
+        {
+            image_animator.SetInteger("mood", 1);
+           
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
             return;
         }
 
-        if (sentences.Count == 4)
+        if (sentences.Count == 1)
         {
-            panel_animator.SetInteger("image", 3);
+            image_animator.SetInteger("mood", 1);
+
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
             return;
         }
+
 
 
 
