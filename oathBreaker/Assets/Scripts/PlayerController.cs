@@ -53,6 +53,11 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("Ciwi");
         }
 
+        if (other.gameObject.CompareTag("Chocolate"))
+        {
+            SceneManager.LoadScene("Top_scene");
+        }
+
         if (other.gameObject.CompareTag("Fighter1"))
         {
             this.gameObject.SetActive(false);
