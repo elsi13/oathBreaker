@@ -64,9 +64,33 @@ public class DialogueManagerDaniele: MonoBehaviour
                     end = 9;
                 }
 
+                else
+                {
+                    start = 8;
+                    end = 9;
 
-                break;
+                    if (Global.been_to_hell_and_back == true)
+                    {
+                        if (Global.Yash_story == 1)
+                        {
+                            
+                            start = 9;
+                            end = 10;
+                        }
+                        if (Global.Lu_story == 1)
+                        {
+                            start = 11;
+                            end = 16;
+
+                        }
+                        Global.Daniele_story = Global.Daniele_story + 1;
+                    }
+                }
+
+                    break;
             case 2:
+
+
                 break;
             default:
                 break;

@@ -57,7 +57,32 @@ public class DialogueManagerYash: MonoBehaviour
                     start = 9;
                     end = 10;
                 }
-                
+                else
+                {
+                    start = 9;
+                    end = 10;
+
+                    if (Global.been_to_hell_and_back == true)
+                    {
+                        if (Global.Lu_story == 1)
+                        {
+                            start = 11;
+                            end = 23;
+                            
+                        }
+                        else
+                        {
+                            start = 23;
+                            end = 32;
+                        }
+                        Global.Yash_story = Global.Yash_story + 1;
+                    }
+
+
+                }
+
+
+
 
 
                 break;

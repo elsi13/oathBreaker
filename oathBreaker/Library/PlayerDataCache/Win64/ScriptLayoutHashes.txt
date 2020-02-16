@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/kapit/Dropbox/Events/14022020 GUDEV/oathBreaker/Builds/OathBreaker.exe
+C:/Users/kapit/Dropbox/Events/14022020 GUDEV/Builds/OathBreaker.exe
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Top_scene.unity

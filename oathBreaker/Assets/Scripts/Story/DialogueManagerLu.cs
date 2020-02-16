@@ -64,9 +64,25 @@ public class DialogueManagerLu: MonoBehaviour
                 }
                 else
                 {
-                    start = 11;
-                    end = 20;
-                    Global.Lu_story = Global.Lu_story + 1;
+                    start = 9;
+                    end = 10;
+
+                    if (Global.been_to_hell_and_back == true)
+                    {
+                        if (Global.Yash_story == 1)
+                        {
+                            start = 11;
+                            end = 23;
+                        }
+                        else
+                        { 
+                            start = 23;
+                            end = 32;
+
+                        }
+                        Global.Lu_story = Global.Lu_story + 1;
+                    }
+
 
                 }
 

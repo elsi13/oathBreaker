@@ -311,6 +311,42 @@ MonoBehaviour:
     - ">\u2026"
     - "Not so smart, then\u2026"
     - (what the?)
+    - "You\u2019re back I see. How was hell? Did the mean demons give you a fright?"
+    - ">It was\u2026 hellish. And how did this portal to hell appear? "
+    - '...'
+    - "Daniele said we shouldn\u2019t talk about it."
+    - '>We need to close the portal!'
+    - "But Daniele said we shouldn\u2019t."
+    - '> Ok, then tell me, why are you guys still here, in this place?'
+    - "The truth is, on the day when you arrived, after going to the pub, we found
+      this place. And I also touched the potato, and went to hell. My dog, Ciwi was
+      with me.\t"
+    - "\u2026\u2026"
+    - '>And what happened?'
+    - "Well, the demons caught me, and expelled my soul back to Earth. They sensed
+      I didn\u2019t belong there. But as the demons approached, Ciwi ran away. Now
+      he\u2019s lost somewhere in Hell."
+    - ">So you\u2019re waiting for him to come back? What if dogs don\u2019t normally
+      go to hell, and the demons don\u2019t chase him?"
+    - "I don\u2019t know\u2026 listen, if you go back to hell and find my Ciwi, I
+      promise to help you close this portal, even if it means going against Daniele."
+    - '>We have a deal'
+    - "What\u2019s up? How was it down there?"
+    - ">I\u2026 it was something I never wish to repeat. Listen, Yash said Daniele
+      told you guys not to close the portal, but we must do so!"
+    - No, we cannot!
+    - '>Why?'
+    - The truth is, on the day when you arrived, after going to the pub, we found
+      this place. And I also touched the portal, and went to hell. My dog, Ciwi was
+      with me.
+    - '>And what happened?'
+    - "Well, the demons caught me, and expelled my soul back to Earth. They sensed
+      I didn\u2019t belong there. But as the demons approached, Ciwi ran away. Now
+      he\u2019s lost somewhere in Hell."
+    - ">So you\u2019re waiting for him to come back? What if dogs don\u2019t normally
+      go to hell, and the demons don\u2019t chase him?"
+    - "I don\u2019t know\u2026 listen, if you go back to hell and find my Ciwi, I
+      promise to help you close this portal, even if it means going against Daniele."
 --- !u!114 &100315134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,7 +846,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -127.57333}
+  m_AnchoredPosition: {x: 0, y: -20}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1431018970
