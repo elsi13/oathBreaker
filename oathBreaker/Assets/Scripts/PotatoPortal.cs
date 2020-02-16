@@ -7,7 +7,7 @@ public class PotatoPortal : MonoBehaviour
 {
 	ParticleSystem fireAnimation;
 	bool onFire = false;
-	bool portalActive = false;
+
 	
 	float emission = 0;
 	float rate = 1e-4f;
@@ -37,7 +37,7 @@ public class PotatoPortal : MonoBehaviour
 				}
 				else
 				{
-					portalActive = true;
+
 				//potato goes on fire - fire yes
 					SetOnFire();			
 				}
@@ -46,6 +46,7 @@ public class PotatoPortal : MonoBehaviour
 		if (cam.fieldOfView <=1)
 		{//go to hell
 			SceneManager.LoadScene("Hell", LoadSceneMode.Single);
+			Global.been_to_hell_and_back = true;
 		}
 		
 		if (onFire)

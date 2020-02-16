@@ -245,9 +245,47 @@ MonoBehaviour:
     - HAHAHA! This trick was invented in India 2500 years ago! And you still fell
       for it!
     - '>Yes, hilarious. More to the point, where are we?'
-    - "You\u2019re boring. Here, I\u2019ll show you another trick!"
-    - .
-    - .
+    - Good question. If you look around yourself, you may deduce the correct answer.
+      It would appear we are in some Satanist lair.
+    - "Anyway, look here , I\u2019ll show you another trick!"
+    - ">Listen, I am serious! Did you guys kidnap me? What\u2019s going on? I need
+      answers."
+    - You're boring. Talk to the hand!
+    - "You\u2019re back I see. How was hell? Did the mean demons give you a fright?"
+    - ">It was\u2026 hellish. And how did this portal to hell appear? "
+    - '...'
+    - "Daniele said we shouldn\u2019t talk about it."
+    - '>We need to close the portal!'
+    - "But Daniele said we shouldn\u2019t."
+    - '> Ok, then tell me, why are you guys still here, in this place?'
+    - Yesterday after Coopers you were out. And it was raining heavily; so Daniele
+      said we should get you inside. This eerie church had an open door, and light
+      was seeping out.
+    - So we brought you here. While warming up, we noticed the portal, and I went
+      in. Soon, the DEMONS OF HELL arrived. I tried to run, but they cornered and
+      caught me.
+    - So why are you still here?
+    - "Well as I ran from them, I dropped my chocolate bar. I am determined to get
+      it back, but I don\u2019t wanna go back to hell."
+    - If you get it back for me, I vow to help you close this portal to hell, even
+      if it means going against Daniele.
+    - "What\u2019s up? How was it down there?"
+    - ">I\u2026 it was something I never wish to repeat. Listen, Yash said Daniele
+      told you guys not to close the portal, but we must do so!"
+    - No, we cannot!
+    - '>Why?'
+    - Yesterday after Coopers you were out. And it was raining heavily; so Daniele
+      said we should get you inside. This eerie church has an open door, and light
+      was seeping out.
+    - So we brought you here. While warming up, we noticed the portal, and I went
+      in. Soon, the DEMONS OF HELL arrived. I tried to run, but they cornered and
+      caught me.
+    - ">So why can\u2019t we close the portal?"
+    - "Well as I ran from them, I dropped my chocolate bar. I am determined to get
+      it back, but I don\u2019t wanna go back to hell."
+    - ">\u2026.\t"
+    - If you get it back for me, I vow to help you close this portal to hell, even
+      if it means going against Daniele.
 --- !u!114 &471101917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,7 +1021,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508140136}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -332}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1130,10 +1168,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 500, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
 	"process_id" : 16972,
+=======
+	"process_id" : 23832,
+>>>>>>> origin/valti
 	"version" : "2018.4.16f1",
 	"app_path" : "C:/Program Files/Unity/Hub/Editor/2018.4.16f1/Editor/Unity.exe",
 	"app_contents_path" : "C:/Program Files/Unity/Hub/Editor/2018.4.16f1/Editor/Data"

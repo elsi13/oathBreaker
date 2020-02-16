@@ -8,6 +8,8 @@ public class DialogueManagerLu: MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    private int start, end;
+
 
 
     public Animator dialogue_animator;
@@ -35,10 +37,67 @@ public class DialogueManagerLu: MonoBehaviour
 
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+
+
+        switch (Global.Lu_story)
         {
-            sentences.Enqueue(sentence);
+            case 0:
+
+                start = 0;
+                end = 10;
+               
+
+                break;
+            case 1:
+                // do something
+
+
+                if (Global.Daniele_story == 0)
+                {
+                    start = 9;
+                    end = 10;
+                }
+                if (Global.Yash_story == 0)
+                {
+                    start = 9;
+                    end = 10;
+                }
+                else
+                {
+                    start = 9;
+                    end = 10;
+
+                    if (Global.been_to_hell_and_back == true)
+                    {
+                        if (Global.Yash_story == 1)
+                        {
+                            start = 11;
+                            end = 23;
+                        }
+                        else
+                        { 
+                            start = 23;
+                            end = 32;
+
+                        }
+                        
+                    }
+
+
+                }
+
+
+                break;
+            case 2:
+                break;
+            default:
+                break;
         }
+        for (int i = start; i < end; i++)
+        {
+            sentences.Enqueue(dialogue.sentences.GetValue(i).ToString());
+        }
+
         DisplayNextSentence();
 
     }
@@ -46,6 +105,7 @@ public class DialogueManagerLu: MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            Global.Lu_story = 1;
             EndDialogue();
             next_animator.SetBool("Next", true);
             return;

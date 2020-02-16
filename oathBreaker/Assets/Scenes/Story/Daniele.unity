@@ -285,10 +285,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 500, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1116,7 +1116,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584695227}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -332}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1193,6 +1193,18 @@ MonoBehaviour:
     - "All in due time, you\u2019re in no rush at this stage. Soon you will understand.
       Until then, feel free to talk to Yash and Lu! Don\u2019t go doing anything I
       wouldn\u2019t do, haha"
+    - "Well well well, who do we have here? You\u2019re back from the hellscape, yes?
+      Good good. "
+    - "I see you\u2019ve spoken to my underlings. What about?"
+    - ">Daniele, we need to close this portal to hell! If we don\u2019t, unsuspecting
+      people might wander in. Or worse, demons might wander out!\t "
+    - "The portal stays open and that\u2019s final."
+    - ">That\u2019s not good enough. I vow to close it!"
+    - "Hahaha good luck with that! You need 3 people to close hellish portals, and
+      there\u2019s no way Lu or Yash will help you. They both have something dear
+      to them in the hell realm."
+    - "And even if they didn\u2019t, you all swore loyalty to me. You shall obey!"
+    - ">We\u2019ll see about that! "
 --- !u!114 &1753760659
 MonoBehaviour:
   m_ObjectHideFlags: 0

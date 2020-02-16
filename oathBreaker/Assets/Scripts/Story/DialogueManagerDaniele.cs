@@ -9,6 +9,7 @@ public class DialogueManagerDaniele: MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     private int count = 0;
+    private int start, end;
 
 
     public Animator dialogue_animator;
@@ -36,21 +37,80 @@ public class DialogueManagerDaniele: MonoBehaviour
 
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        /*foreach (string sentence in dialogue.sentences)
         {
+            Debug.Log(dialogue.sentences.GetValue(1));
+
             sentences.Enqueue(sentence);
+        }*/
+        switch (Global.Daniele_story){
+            case 0:
+
+                start = 0;
+                end = 9;
+                
+
+                break;
+            case 1:
+                // do something
+                if (Global.Lu_story == 0)
+                {
+                    start = 8;
+                    end = 9;
+                }
+                if (Global.Yash_story == 0)
+                {
+                    start = 8;
+                    end = 9;
+                }
+
+                else
+                {
+                    start = 8;
+                    end = 9;
+
+                    if (Global.been_to_hell_and_back == true)
+                    {
+                        if (Global.Yash_story == 1)
+                        {
+                            
+                            start = 9;
+                            end = 10;
+                        }
+                        if (Global.Lu_story == 1)
+                        {
+                            start = 11;
+                            end = 20;
+
+                        }
+                        
+                    }
+                }
+
+                    break;
+           
+            default:
+                break;
         }
+        for (int i=start; i<end; i++)
+        {
+            sentences.Enqueue(dialogue.sentences.GetValue(i).ToString());
+        }
+
         
+
         DisplayNextSentence();
         count = sentences.Count;
 
     }
     public void DisplayNextSentence()
     {
-        if (count-sentences.Count == 8) 
+
+        if (sentences.Count == 0) 
         {
             EndDialogue();
             next_animator.SetBool("Next", true);
+            Global.Daniele_story = 1;
             return;
         }
 
@@ -60,9 +120,6 @@ public class DialogueManagerDaniele: MonoBehaviour
         {
             image_animator.SetInteger("dan_mood", 1);
 
-            Debug.Log(Global.Yash_story);
-            Global.Yash_story = 1;
-            Debug.Log(Global.Yash_story);
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));

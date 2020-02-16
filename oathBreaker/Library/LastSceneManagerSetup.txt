@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Top_scene.unity
+=======
+- path: Assets/Scenes/Story/Lu.unity
+>>>>>>> origin/valti
   isLoaded: 1
   isActive: 1
