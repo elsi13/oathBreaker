@@ -61,4 +61,13 @@ crashlytics-build.properties
 # Everything in temp file
 oathBreaker/Temp/*
 *.log
+<<<<<<< HEAD
 oathBreaker/Library/metadata/
+=======
+oathBreaker/Library/CrashedAssetImports.txt
+oathBreaker/Library/CurrentLayout.dwlt
+oathBreaker/Library/EditorInstance.json
+oathBreaker/Library/LastSceneManagerSetup.txt
+oathBreaker/Library/StateCache/Hierarchy/01e890-mainStage.json
+oathBreaker/Library/StateCache/SceneView/fd1a0a-mainStage.json
+>>>>>>> origin/marion
