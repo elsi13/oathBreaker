@@ -9,6 +9,8 @@ public class Global
     public static int Lu_story = 0;
     public static int Daniele_story = 0;
     public static bool been_to_hell_and_back = false;
+    public static bool ciwi = false;
+    public static bool chocolate = false;
 
     
     
