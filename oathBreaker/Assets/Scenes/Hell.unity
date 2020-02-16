@@ -1147,7 +1147,7 @@ GameObject:
   - component: {fileID: 180528130}
   m_Layer: 0
   m_Name: Demon
-  m_TagString: Untagged
+  m_TagString: Fighter1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1165,7 +1165,7 @@ Transform:
   m_Children:
   - {fileID: 1719571500}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &229842189 stripped
 GameObject:
@@ -1460,6 +1460,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &307158816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307158814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cde8f9efbb9eb84f8d339041b5d6666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &307158820 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3946340290472626429, guid: b25eb764d2a98994b848b3ad582be49c,
@@ -2784,7 +2796,7 @@ GameObject:
   - component: {fileID: 686704839}
   m_Layer: 0
   m_Name: Demon (2)
-  m_TagString: Untagged
+  m_TagString: Fighter1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2898,7 +2910,7 @@ RectTransform:
   - {fileID: 448060400}
   - {fileID: 80639802}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4238,6 +4250,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3429473048176398739, guid: dda126f36178fe7488b4c651c371e3e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ciwi
+      objectReference: {fileID: 0}
     - target: {fileID: 3429473048176402007, guid: dda126f36178fe7488b4c651c371e3e9,
         type: 3}
       propertyPath: m_Name
@@ -4247,6 +4264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Ciwi
+      objectReference: {fileID: 0}
+    - target: {fileID: 3429473048176402007, guid: dda126f36178fe7488b4c651c371e3e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dda126f36178fe7488b4c651c371e3e9, type: 3}
@@ -4742,7 +4764,7 @@ GameObject:
   - component: {fileID: 1307608268}
   m_Layer: 0
   m_Name: Demon (1)
-  m_TagString: Untagged
+  m_TagString: Fighter1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4826,7 +4848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1327250928
 GameObject:

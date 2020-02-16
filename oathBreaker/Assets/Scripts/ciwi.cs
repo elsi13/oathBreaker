@@ -21,7 +21,7 @@ public class ciwi : MonoBehaviour
 			//idealy go back to previous scene here
 			GetComponent<Animator>().Play("Idle");
 		} else if (Input.GetMouseButtonDown(1)){
-			SceneManager.LoadScene("Top-scene");
+			SceneManager.LoadScene("Top_scene");
 		}
     }
 	
