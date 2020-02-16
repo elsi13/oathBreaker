@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
@@ -46,6 +48,19 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Ciwi"))
+        {
+            SceneManager.LoadScene("Ciwi");
+        }
+
+        if (other.gameObject.CompareTag("Fighter1"))
+        {
+            this.gameObject.SetActive(false);
+            init_scene.panel.gameObject.SetActive(true);
+            init_scene.dead_text.gameObject.SetActive(true);
+            init_scene.button.gameObject.SetActive(true);
+        }
+
         if (other.gameObject.CompareTag("Lu"))
         {
             SceneManager.LoadScene("Lu");

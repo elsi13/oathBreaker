@@ -1178,12 +1178,21 @@ MonoBehaviour:
   dialogue:
     name: Daniele
     sentences:
-    - Bruh
-    - Bruh
-    - 'gg
-
-'
-    - Bruh
+    - Good Morning! How are we feeling today?
+    - ">Good morning Daniele, feeling like a morning breath. What\u2019s going on?"
+    - "Ah, I\u2019m all right, thank you very much. Been busy submitting papers and
+      such. "
+    - 'As the proverb goes: the world spins round its axis; one man works, another
+      relaxes.'
+    - (bruh what?)
+    - ">Uhh yes\u2026, that\u2019s not what I meant\u2026 I mean, why are we in a
+      church? And an apparently Satanist one at that?"
+    - Well, you know how it goes, life can be a bit unpredictable at times. Now excuse
+      me, I need to write a few emails.
+    - '>But how did I get here? '
+    - "All in due time, you\u2019re in no rush at this stage. Soon you will understand.
+      Until then, feel free to talk to Yash and Lu! Don\u2019t go doing anything I
+      wouldn\u2019t do, haha"
 --- !u!114 &1753760659
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -57,7 +57,7 @@ public class DialogueManagerLu: MonoBehaviour
         if (sentences.Count == 5)
         {
             image_animator.SetInteger("lu_mood", 3);
-           
+            Debug.Log("Anything");
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
             return;
