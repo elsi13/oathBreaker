@@ -71,18 +71,8 @@ public class DialogueManagerDaniele: MonoBehaviour
 
                     if (Global.been_to_hell_and_back == true)
                     {
-                        if (Global.Yash_story == 1)
-                        {
-                            
-                            start = 9;
-                            end = 10;
-                        }
-                        if (Global.Lu_story == 1)
-                        {
-                            start = 11;
-                            end = 20;
-
-                        }
+                        start = 9;
+                        end = 16;
                         
                     }
                 }

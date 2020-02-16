@@ -42,7 +42,8 @@ public class DialogueManagerYash: MonoBehaviour
 
                 start = 0;
                 end = 10;
-                
+                Global.Yash_story = 1;
+
 
                 break;
             case 1:
@@ -66,13 +67,14 @@ public class DialogueManagerYash: MonoBehaviour
                     {
                         if (Global.Lu_story == 1)
                         {
-                            start = 11;
-                            end = 23;
+                            start = 10;
+                            end = 22;
+                            Global.Yash_story = 2;
                             
                         }
                         else
                         {
-                            start = 23;
+                            start = 22;
                             end = 32;
                         }
                         
@@ -102,7 +104,7 @@ public class DialogueManagerYash: MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            Global.Yash_story = 1;
+            
             EndDialogue();
             next_animator.SetBool("Next", true);
             return;
