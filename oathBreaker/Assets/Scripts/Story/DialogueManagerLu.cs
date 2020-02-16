@@ -45,7 +45,7 @@ public class DialogueManagerLu: MonoBehaviour
 
                 start = 0;
                 end = 10;
-                Global.Lu_story = Global.Lu_story + 1;
+               
 
                 break;
             case 1:
@@ -80,7 +80,7 @@ public class DialogueManagerLu: MonoBehaviour
                             end = 32;
 
                         }
-                        Global.Lu_story = Global.Lu_story + 1;
+                        
                     }
 
 
@@ -105,6 +105,7 @@ public class DialogueManagerLu: MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            Global.Lu_story = 1;
             EndDialogue();
             next_animator.SetBool("Next", true);
             return;

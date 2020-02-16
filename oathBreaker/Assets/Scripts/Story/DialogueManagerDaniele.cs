@@ -48,7 +48,7 @@ public class DialogueManagerDaniele: MonoBehaviour
 
                 start = 0;
                 end = 9;
-                Global.Daniele_story = Global.Daniele_story + 1;
+                
 
                 break;
             case 1:
@@ -80,18 +80,15 @@ public class DialogueManagerDaniele: MonoBehaviour
                         if (Global.Lu_story == 1)
                         {
                             start = 11;
-                            end = 16;
+                            end = 20;
 
                         }
-                        Global.Daniele_story = Global.Daniele_story + 1;
+                        
                     }
                 }
 
                     break;
-            case 2:
-
-
-                break;
+           
             default:
                 break;
         }
@@ -113,6 +110,7 @@ public class DialogueManagerDaniele: MonoBehaviour
         {
             EndDialogue();
             next_animator.SetBool("Next", true);
+            Global.Daniele_story = 1;
             return;
         }
 

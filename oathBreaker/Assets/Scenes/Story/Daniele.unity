@@ -1195,6 +1195,16 @@ MonoBehaviour:
       wouldn\u2019t do, haha"
     - "Well well well, who do we have here? You\u2019re back from the hellscape, yes?
       Good good. "
+    - "I see you\u2019ve spoken to my underlings. What about?"
+    - ">Daniele, we need to close this portal to hell! If we don\u2019t, unsuspecting
+      people might wander in. Or worse, demons might wander out!\t "
+    - "The portal stays open and that\u2019s final."
+    - ">That\u2019s not good enough. I vow to close it!"
+    - "Hahaha good luck with that! You need 3 people to close hellish portals, and
+      there\u2019s no way Lu or Yash will help you. They both have something dear
+      to them in the hell realm."
+    - "And even if they didn\u2019t, you all swore loyalty to me. You shall obey!"
+    - ">We\u2019ll see about that! "
 --- !u!114 &1753760659
 MonoBehaviour:
   m_ObjectHideFlags: 0
