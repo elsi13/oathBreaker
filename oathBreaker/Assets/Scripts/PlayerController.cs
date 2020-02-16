@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     private GameObject ground, ground1, ground2, ground3, ground4, ground5, ground6, ground7;
     private GameObject wall0, wall1, wall2, wall3, wall4, wall5, wall6, wall7;
+    private GameObject panel, button, dead_text;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,13 @@ public class PlayerController : MonoBehaviour
         wall5 = GameObject.Find("Walls/Group5");
         wall6 = GameObject.Find("Walls/Group6");
         wall7 = GameObject.Find("Walls/Group7");
+
+        panel = GameObject.Find("Canvas/Panel");
+        button = GameObject.Find("Canvas/NextButton");
+        dead_text = GameObject.Find("Canvas/Text (TMP)");
+        panel.gameObject.SetActive(false);
+        button.gameObject.SetActive(false);
+        dead_text.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,6 +55,19 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Ciwi"))
+        {
+            SceneManager.LoadScene("Ciwi");
+        }
+
+        if (other.gameObject.CompareTag("Fighter1"))
+        {
+            this.gameObject.SetActive(false);
+            panel.gameObject.SetActive(true);
+            button.gameObject.SetActive(true);
+            dead_text.gameObject.SetActive(true);
+        }
+
         if (other.gameObject.CompareTag("Lu"))
         {
             SceneManager.LoadScene("Lu");
@@ -57,6 +79,11 @@ public class PlayerController : MonoBehaviour
         }
 
         if (other.gameObject.CompareTag("Danielle"))
+        {
+            SceneManager.LoadScene("Daniele");
+        }
+
+        if (other.gameObject.CompareTag("Fighter1"))
         {
             SceneManager.LoadScene("Daniele");
         }
