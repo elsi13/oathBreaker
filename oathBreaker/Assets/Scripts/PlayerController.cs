@@ -11,10 +11,6 @@ public class PlayerController : MonoBehaviour
     private GameObject ground, ground1, ground2, ground3, ground4, ground5, ground6, ground7;
     private GameObject wall0, wall1, wall2, wall3, wall4, wall5, wall6, wall7;
 
-    private GameObject canvas;
-
-    private int collected_both = 0;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +31,6 @@ public class PlayerController : MonoBehaviour
         wall5 = GameObject.Find("Walls/Group5");
         wall6 = GameObject.Find("Walls/Group6");
         wall7 = GameObject.Find("Walls/Group7");
-        
-        canvas = GameObject.Find("Canvas");
-        canvas.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -51,10 +44,11 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(movement * Time.deltaTime * speed);
 
-        if (collected_both == 2)
+        if (Global.collected_ciwi && Global.collected_chocolate)
         {
-            canvas.gameObject.SetActive(true);
-            collected_both = 0;
+            init_endgame.endgame.gameObject.SetActive(true);
+            Global.collected_ciwi = false;
+            Global.collected_chocolate = false;
         }
     }
 
@@ -64,14 +58,14 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Ciwi"))
         {
             init_scene.ciwi.gameObject.SetActive(false);
-            collected_both += 1;
+            Global.collected_ciwi = true;
             SceneManager.LoadScene("Ciwi");
         }
 
         if (other.gameObject.CompareTag("Chocolate"))
         {
             init_scene.chocolate.gameObject.SetActive(false);
-            collected_both += 1;
+            Global.collected_chocolate = true;
             SceneManager.LoadScene("Top_scene");
         }
 
